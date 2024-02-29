@@ -1,0 +1,126 @@
+#Introduction
+next-word prediction, also known as language modeling.
+Imagine you’re typing a sentence, and your smartphone or computer suggests the next word you’re likely to type. That’s next-word prediction! 
+It’s a problem of natural language processing (NLP) where we aim to predict the most probable word that should follow a given sequence of words so that people do not have to type the following word, but rather can select a word from the suggested ones.
+Predicting the next word in a sequence can reduce the count of number of letters typed made by the user. Next word prediction is an application of NLP.
+
+#Why Is It Important?
+
+Next-word prediction has practical applications in various areas:
+1) Text Input: It enhances typing speed and accuracy by suggesting the next word as you type.
+2)Virtual Assistants: Think of Siri, Alexa, or Google Assistant—they use next-word prediction to generate coherent responses.
+3)Autocomplete in Search Engines: When you start typing a query, search engines predict the rest of your sentence.
+4) Machine Translation: Predicting the next word helps improve translation quality.
+
+#How Does next word prediction Work?
+1)Data Preparation:
+We need a large text corpus (a collection of sentences or documents) to train our model.
+The corpus(collection of sentences) can be news articles, books, social media posts, etc.
+
+2)Tokenization:
+We split the text into individual words (tokens).
+For example, “I love cats” becomes [“I”, “love”, “cats”].
+
+3)Building the Vocabulary:
+We create a vocabulary—a set of unique words in our corpus.
+Each word is assigned a unique index.
+
+4)Creating Training Examples:
+We create input-output pairs:
+Input: A sequence of words (e.g., [“I”, “love”]).
+Output: The next word (e.g., “cats”).
+
+5)Word Embeddings:
+We represent words as dense vectors (word embeddings).
+These vectors capture semantic meaning and context.
+
+6)Recurrent Neural Networks (RNNs):
+RNNs are specialized for sequential data.
+They process one word at a time, maintaining hidden states that capture context.
+The hidden state from the previous word influences the prediction for the next word.
+
+7)Training the Model:
+We feed input sequences into the RNN.
+The RNN predicts the next word.
+We compare the predicted word with the actual next word and adjust the model’s weights (backpropagation).
+
+8)Sampling and Prediction:
+During inference, we sample from the predicted word probabilities.
+The word with the highest probability becomes the suggested next word.
+
+9)Evaluation:
+We evaluate the model’s performance using metrics like accuracy or perplexity.
+
+#Challenges in next word prediction :
+1) Long-Term Dependencies:RNNs struggle with long-term dependencies (words far apart in a sentence).
+Imagine a sentence like: “The cat, which was black, sat on the mat.”
+To predict the last word (“mat”), the model needs to remember the context from the beginning of the sentence.
+However, traditional RNNs struggle with this because they have a short memory.
+As the sentence gets longer, the influence of early words diminishes.
+This limitation affects the model’s ability to capture long-range dependencies.
+
+2)Vanishing Gradient: Gradients can vanish during backpropagation, affecting training.
+During training, we adjust the model’s weights using gradients.
+Gradients flow backward from the output to the input layers.
+In RNNs, gradients can become very small (vanish) as they propagate back through time.
+When gradients vanish, the model doesn’t learn effectively.
+This issue is especially pronounced in deep RNNs or long sequences.
+
+3)Fixed Window Size:RNNs have limited context due to fixed window sizes.
+RNNs process words sequentially, one at a time.
+They maintain a hidden state that captures context.
+However, this context window is limited—it can’t see too far back in the sentence.
+For example, if we’re predicting the last word, the RNN might not remember the first few words.
+This fixed window size affects the model’s ability to understand distant context.
+
+#Solutions of these problems: 
+1) Long Short-Term Memory (LSTM):
+LSTMs address vanishing gradient and long-term dependency issues.
+They have a memory cell that selectively stores and retrieves information.
+LSTMs can capture context over longer sequences.
+
+2)Gated Recurrent Unit (GRU):
+Similar to LSTMs but with a simpler architecture.
+Merges the cell state and hidden state into a single state vector.
+Introduces gating mechanisms to control information flow.
+
+3)Attention Mechanisms:
+Used in more advanced models (like Transformers).
+Dynamically focus on relevant parts of the input sequence.
+Allows the model to weigh context differently for different words.
+
+#Real-Life Analogy:
+Think of RNNs like reading a book one word at a time. You remember the recent context, but it’s hard to recall details from the beginning of the book. LSTMs and GRUs act like bookmarks, helping you remember important pages even as you flip through the book.
+
+#the technologies used in next-word prediction project
+1) Recurrent Neural Networks (RNNs):
+RNNs are a class of neural networks designed for sequential data.
+They process one word at a time, maintaining hidden states that capture context.
+RNNs have loops within their architecture, allowing them to store and propagate information through time.
+However, traditional RNNs suffer from issues like vanishing gradients and struggle with long-term dependencies.
+
+2)Long Short-Term Memory (LSTM):
+LSTM is a specialized variant of RNNs.
+It overcomes limitations like vanishing gradients.
+LSTMs introduce a memory cell that selectively stores and retrieves information over long sequences.
+Effective for modeling long-term dependencies.
+
+3) Gated Recurrent Unit (GRU):
+Another RNN variant.
+Simplifies the architecture compared to LSTM.
+Merges the cell state and hidden state into a single state vector.
+Introduces gating mechanisms to control information flow.
+
+4)Word Embeddings:
+Represent words as dense vectors (embeddings).
+Capture semantic meaning and context.
+Techniques like Word2Vec, GloVe, or FastText create these embeddings.
+
+5)Training Techniques:
+Backpropagation: Adjust model weights based on prediction errors.
+Stochastic Gradient Descent (SGD): Optimize model parameters during training.
+
+6)Evaluation Metrics:
+Accuracy: How often the model predicts the correct next word.
+Perplexity: Measures how surprised the model is by the actual next word.
+
