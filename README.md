@@ -11,9 +11,6 @@ o Required libraries: nltk, numpy, scikit-learn,TensorFlow library
 
 o Install the required dependencies using pip install tensorflow.
 # Getting Started
-
-# Installation:
-o Clone this repository to your local machine.
 o Clone the repository:
 
 git clone: 
@@ -21,6 +18,9 @@ https://github.com/pranavvyawahare25/Next-Word-Predictor
 
 Navigate to the project directory:
 cd Next-Word-Predictor
+
+# Installation:
+o Clone this repository to your local machine.
 
 # Contributing
 Contributions to the project are welcome. Feel free to submit bug reports, feature requests, or pull requests.
