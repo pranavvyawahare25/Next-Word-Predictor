@@ -5,7 +5,7 @@ This Python project aims to develop a next word predictor based on a given input
 # Prerequisites
 o Python 3
 
-o TensorFlow library
+o Required libraries: nltk, numpy, scikit-learn,TensorFlow library
 
 # Installation:
 o Clone this repository to your local machine.
