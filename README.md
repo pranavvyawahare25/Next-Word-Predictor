@@ -1,5 +1,6 @@
 # Next-Word-Predictor with Python
-
+# Dataset
+# Prerequisites
 # Getting Started
 
 o Clone the repository:
