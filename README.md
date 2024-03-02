@@ -1,6 +1,9 @@
 # Next-Word-Predictor with Python
+
 # Dataset
 # Prerequisites
+o Python 3
+o TensorFlow library
 # Getting Started
 
 o Clone the repository:
