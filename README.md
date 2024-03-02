@@ -1,4 +1,5 @@
 # Next-Word-Predictor with Python
+This Python project aims to develop a next word predictor based on a given input sentence. The predictor analyzes the input text and suggests the most probable word that could follow it, utilizing techniques from natural language processing (NLP) and machine learning.
 
 # Dataset
 # Prerequisites
