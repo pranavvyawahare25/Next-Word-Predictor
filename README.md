@@ -5,6 +5,11 @@
 o Python 3
 
 o TensorFlow library
+
+# Installation:
+o Clone this repository to your local machine.
+
+o Install the required dependencies using pip install tensorflow.
 # Getting Started
 
 o Clone the repository:
