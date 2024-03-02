@@ -3,7 +3,7 @@ This Python project aims to develop a next word predictor based on a given input
 
 # Dataset
 # Prerequisites
-o Python 3
+o Python 3.x
 
 o Required libraries: nltk, numpy, scikit-learn,TensorFlow library
 
