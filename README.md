@@ -21,7 +21,7 @@ o Navigate to the project directory:
 cd Next-Word-Predictor
 
 # Installation:
-o Clone this repository to your local machine.
+Clone this repository to your local machine.
 
 # Data
 The project may require additional data for training the predictive model. 
