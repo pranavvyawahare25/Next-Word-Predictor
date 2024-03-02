@@ -6,6 +6,7 @@ To get started with the Next Word Predictor project, follow these steps:
 #Clone the repository:
 
 git clone https://github.com/your-username/next-word-predictor.git
+
 Install the required dependencies:
 
 pip install -r requirements.txt
