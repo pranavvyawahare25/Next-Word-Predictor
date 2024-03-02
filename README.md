@@ -18,6 +18,9 @@ o Clone the repository:
 git clone: 
 https://github.com/pranavvyawahare25/Next-Word-Predictor
 
+#Contributing
+Contributions to the project are welcome. Feel free to submit bug reports, feature requests, or pull requests.
+
 # License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
