@@ -4,6 +4,7 @@
 # Getting Started
 
 o Clone the repository:
+
 git clone (https://github.com/pranavvyawahare25/Next-Word-Predictor)
 
 # License
