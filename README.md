@@ -34,7 +34,7 @@ The predictor may utilize different models for word prediction, including:
 1. n-gram models
 2. Recurrent Neural Networks (RNNs)
 3. Long Short-Term Memory networks (LSTMs)
-4. ransformer-based models (e.g., GPT, BERT)
+4. Transformer-based models (e.g., GPT, BERT)
 
 # Contributing
 Contributions to the project are welcome. Feel free to submit bug reports, feature requests, or pull requests.
