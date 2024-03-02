@@ -17,6 +17,7 @@ git clone:
 https://github.com/pranavvyawahare25/Next-Word-Predictor
 
 Navigate to the project directory:
+
 cd Next-Word-Predictor
 
 # Installation:
