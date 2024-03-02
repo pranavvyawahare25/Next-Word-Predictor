@@ -2,7 +2,7 @@
 
 # Getting Started
 
-#Clone the repository:
+o Clone the repository:
 
 git clone (https://github.com/pranavvyawahare25/Next-Word-Predictor)
 
