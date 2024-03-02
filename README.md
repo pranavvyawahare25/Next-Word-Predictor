@@ -1,11 +1,10 @@
 # Next-Word-Predictor with Python
 
 # Getting Started
-To get started with the Next Word Predictor project, follow these steps:
 
 #Clone the repository:
 
-git clone https://github.com/your-username/next-word-predictor.git
+git clone (https://github.com/pranavvyawahare25/Next-Word-Predictor)
 
 Install the required dependencies:
 
