@@ -16,12 +16,25 @@ o Clone the repository:
 git clone: 
 https://github.com/pranavvyawahare25/Next-Word-Predictor
 
-Navigate to the project directory:
+o Navigate to the project directory:
 
 cd Next-Word-Predictor
 
 # Installation:
 o Clone this repository to your local machine.
+
+# Data
+The project may require additional data for training the predictive model. 
+
+Commonly used datasets for NLP tasks include the Gutenberg corpus, Brown corpus, or custom datasets specific to the application domain.
+
+# Model
+The predictor may utilize different models for word prediction, including:
+
+1. n-gram models
+2. Recurrent Neural Networks (RNNs)
+3. Long Short-Term Memory networks (LSTMs)
+T4. ransformer-based models (e.g., GPT, BERT)
 
 # Contributing
 Contributions to the project are welcome. Feel free to submit bug reports, feature requests, or pull requests.
