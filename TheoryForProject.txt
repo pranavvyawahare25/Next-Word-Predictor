@@ -1,7 +1,8 @@
 #Introduction
 next-word prediction, also known as language modeling.
 Imagine you’re typing a sentence, and your smartphone or computer suggests the next word you’re likely to type. That’s next-word prediction! 
-It’s a problem of natural language processing (NLP) where we aim to predict the most probable word that should follow a given sequence of words so that people do not have to type the following word, but rather can select a word from the suggested ones.
+It’s a problem of natural language processing (NLP) where we aim to predict the most probable word that should follow a given sequence of words so
+that people do not have to type the following word, but rather can select a word from the suggested ones.
 Predicting the next word in a sequence can reduce the count of number of letters typed made by the user. Next word prediction is an application of NLP.
 
 #Why Is It Important?
