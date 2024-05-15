@@ -2,14 +2,9 @@
 This Python project aims to develop a next word predictor based on a given input sentence. The predictor analyzes the input text and suggests the most probable word that could follow it, utilizing techniques from natural language processing (NLP) and machine learning.
 
 # Dataset
-In this project, we've used a dataset called the "Project Gutenberg Book Corpus for Next Word 
-Prediction." dataset has various kinds of books, from different times and genres, like novels, poems, and more. 
-In Next Word Prediction project, we're using the dataset as the starting point to teach 
-machine learning models how to guess the next word in a sentence. 
-It's like when you read a sentence and can guess what 
-the next word might be because of the words you've already read.
-Our goal is to make a model that can predict the next word accurately and quickly, making it easier for 
-people to write and understand text in various applications.
+In this project, we've used a dataset called the "tropical_chat.csv" for Next Word Prediction." The dataset contains a collection of conversational messages covering a wide range of topics, including technology, animals, and hobbies.
+Each message is associated with its context and may contain discussions about Google, Microsoft, fish, cats, dance, and various other subjects.
+Messages are provided in a structured format, enabling easy ingestion for training and evaluation purposes.
 
 # Prerequisites
 o Python 3.x
