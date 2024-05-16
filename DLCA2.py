@@ -12,7 +12,7 @@ device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model.to(device)
 
 # Define a function to predict the next word
-@st.cache
+@st.cache_data
 def predict_next_word(text, top_k=5):
     input_ids = tokenizer.encode(text, return_tensors='pt').to(device)
     output = model(input_ids)[0][:, -1, :]
