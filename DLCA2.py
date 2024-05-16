@@ -13,14 +13,18 @@ model.to(device)
 
 @st.cache_resource
 # Define a function to predict the next word
-def predict_next_word(text, top_k=5):
+def predict_next_word(text, model, tokenizer, device, top_k=5):
     input_ids = tokenizer.encode(text, return_tensors='pt').to(device)
     output = model(input_ids)[0][:, -1, :]
-    predictions = torch.topk(output, top_k, dim=-1, largest=False)
+    predictions = torch.topk(output, top_k, dim=-1)
     predicted_tokens = predictions.indices.tolist()[0]
     predicted_words = [tokenizer.decode(token).strip() for token in predicted_tokens]
     prediction_scores = predictions.values.tolist()[0]
-    
+
+    # Reverse the lists to display predictions in ascending order of probability
+    predicted_words = predicted_words[::-1]
+    prediction_scores = prediction_scores[::-1]
+
     next_word_predictions = dict(zip(predicted_words, prediction_scores))
     return next_word_predictions
 
