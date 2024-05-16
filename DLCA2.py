@@ -11,11 +11,12 @@ model = AutoModelWithLMHead.from_pretrained(model_name)
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 model.to(device)
 
+@st.cache_resource
 # Define a function to predict the next word
 def predict_next_word(text, top_k=5):
     input_ids = tokenizer.encode(text, return_tensors='pt').to(device)
     output = model(input_ids)[0][:, -1, :]
-    predictions = torch.topk(output, top_k, dim=-1)
+    predictions = torch.topk(output, top_k, dim=-1, largest=False)
     predicted_tokens = predictions.indices.tolist()[0]
     predicted_words = [tokenizer.decode(token).strip() for token in predicted_tokens]
     prediction_scores = predictions.values.tolist()[0]
